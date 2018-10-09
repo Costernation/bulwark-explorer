@@ -57,8 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
-# setings file for syste
-config.js
+# setings file for system
 *.cron_lock
 
 .DS_Store
