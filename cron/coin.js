@@ -27,7 +27,7 @@ async function syncCoin() {
   }
 
   const coin = new Coin({
-    cap: market.market_cap_usd,
+    cap: 0,
     createdAt: date,
     blocks: info.blocks,
     btc: market.price_btc,
@@ -37,7 +37,7 @@ async function syncCoin() {
     netHash: nethashps,
     peers: info.connections,
     status: 'Online',
-    supply: market.available_supply, // TODO: change to actual count from db.
+    supply: 0, // TODO: change to actual count from db.
     usd: market.price_usd
   });
 
